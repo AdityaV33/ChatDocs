@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ChatDocs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bgDark: '#0b1020',
+            bgCard: '#111827',
+            bgCard2: '#0f172a',
+            accent: '#3b82f6'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-bgDark to-[#0e1a3a] text-gray-200">
+
+  <div class="max-w-4xl mx-auto px-6 py-8 flex flex-col min-h-screen">
+
+    
+    <div class="mb-6">
+      <h1 class="text-3xl font-bold mb-2">ChatDocs</h1>
+      <p class="text-gray-400">
+  Ask questions. Get answers grounded in your content.
+</p>
+    </div>
+
+    
+    <div class="bg-bgCard rounded-2xl p-6 mb-5 border border-white/5 shadow-lg">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-lg font-semibold">Upload</h2>
+        <span id="uploadStatus"
+          class="text-xs px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-300">
+          Waiting for input
+        </span>
+      </div>
+
+      
+      <div class="mb-4">
+        <label class="block text-sm text-gray-400 mb-2">Paste a URL</label>
+        <input
+          id="urlInput"
+          type="text"
+          placeholder="https://example.com"
+          class="w-full p-3 rounded-xl bg-bgCard2 text-gray-100 outline-none border border-white/10 focus:border-accent/70 focus:ring-2 focus:ring-accent/20 transition"
+        />
+      </div>
+
+      
+      <div class="flex items-center gap-3 my-4">
+        <div class="h-px bg-white/10 flex-1"></div>
+        <div class="text-xs uppercase tracking-wider text-gray-500">or</div>
+        <div class="h-px bg-white/10 flex-1"></div>
+      </div>
+
+      
+      <div class="mb-5">
+        <label class="block text-sm text-gray-400 mb-2">Choose a PDF or DOCX file</label>
+        <input
+          id="fileInput"
+          type="file"
+          accept=".pdf,.docx,application/pdf"
+          class="block w-full text-gray-300 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-white/5 file:text-gray-200 hover:file:bg-white/10 transition"
+        />
+        <p class="text-xs text-gray-500 mt-2">
+          Tip: If you provide both a URL and a file, the file will be used.
+        </p>
+      </div>
+
+     
+      <div class="flex items-center gap-4">
+        <button
+          id="uploadBtn"
+          onclick="unifiedUpload()"
+          class="bg-accent hover:bg-blue-500 px-5 py-2.5 rounded-xl font-semibold shadow-md transition disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          Upload & Summarize
+        </button>
+
+        <div id="uploadHint" class="text-sm text-gray-400">
+          Supported: PDF, DOCX, URL
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="flex-1 bg-bgCard rounded-2xl border border-white/5 shadow-lg overflow-hidden flex flex-col">
+
+      
+      <div id="chatBox" class="flex-1 p-5 overflow-y-auto space-y-4">
+        <div class="text-gray-400 text-sm">
+          Upload something, then start chatting 👇
+        </div>
+      </div>
+
+      
+      <div class="border-t border-white/10 p-4 bg-bgCard2">
+        <div class="flex gap-3">
+          <input
+            id="questionInput"
+            placeholder="Ask a question about the uploaded content..."
+            class="flex-1 p-3 rounded-xl bg-bgCard text-gray-100 outline-none border border-white/10 focus:border-accent/70 focus:ring-2 focus:ring-accent/20 transition"
+            disabled
+          />
+          <button
+            id="askBtn"
+            onclick="askQuestion()"
+            class="bg-accent hover:bg-blue-500 px-5 py-2.5 rounded-xl font-semibold shadow-md transition disabled:opacity-50 disabled:cursor-not-allowed"
+            disabled
+          >
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<script>
+
+let chatHistory = [];
+
+
+document.getElementById("urlInput").addEventListener("input", () => {
+  const url = document.getElementById("urlInput").value.trim();
+  if (url.length > 0) {
+    document.getElementById("fileInput").value = "";
+  }
+});
+
+document.getElementById("fileInput").addEventListener("change", () => {
+  const file = document.getElementById("fileInput").files[0];
+  if (file) {
+    document.getElementById("urlInput").value = "";
+  }
+});
+
+function setUploadStatus(text) {
+  document.getElementById("uploadStatus").innerText = text;
+}
+
+function setQAEnabled(enabled) {
+  document.getElementById("questionInput").disabled = !enabled;
+  document.getElementById("askBtn").disabled = !enabled;
+}
+
+function scrollChatToBottom() {
+  const chatBox = document.getElementById("chatBox");
+  chatBox.scrollTop = chatBox.scrollHeight;
+}
+
+function addBubble(role, text) {
+  const chatBox = document.getElementById("chatBox");
+
+  const wrapper = document.createElement("div");
+  wrapper.className = role === "user" ? "flex justify-end" : "flex justify-start";
+
+  const bubble = document.createElement("div");
+  bubble.className =
+    (role === "user"
+      ? "bg-accent text-white"
+      : "bg-white/5 text-gray-200 border border-white/10") +
+    " max-w-[85%] rounded-2xl px-4 py-3 whitespace-pre-wrap leading-relaxed shadow";
+
+  bubble.innerText = text;
+
+  wrapper.appendChild(bubble);
+  chatBox.appendChild(wrapper);
+  scrollChatToBottom();
+
+  return bubble;
+}
+
+function addSystemMessage(text) {
+  const chatBox = document.getElementById("chatBox");
+
+  const msg = document.createElement("div");
+  msg.className = "text-xs text-gray-400 bg-white/5 border border-white/10 rounded-xl px-4 py-3";
+  msg.innerText = text;
+
+  chatBox.appendChild(msg);
+  scrollChatToBottom();
+}
+
+function clearChat() {
+  const chatBox = document.getElementById("chatBox");
+  chatBox.innerHTML = "";
+
+  
+  chatHistory = [];
+}
+
+async function unifiedUpload() {
+  const urlInput = document.getElementById("urlInput");
+  const fileInput = document.getElementById("fileInput");
+  const uploadBtn = document.getElementById("uploadBtn");
+
+  const url = urlInput.value.trim();
+  const file = fileInput.files[0];
+
+  if (!file && !url) {
+    alert("Please select a PDF/DOCX file or paste a URL.");
+    return;
+  }
+
+  uploadBtn.disabled = true;
+  setQAEnabled(false);
+  setUploadStatus("Uploading...");
+
+  clearChat();
+  addSystemMessage("Uploading and summarizing...");
+
+  try {
+    
+    if (file) {
+      const fileName = file.name.toLowerCase();
+
+      let endpoint = "/upload";
+      if (fileName.endsWith(".pdf")) endpoint = "/upload";
+      else if (fileName.endsWith(".docx")) endpoint = "/upload/docx";
+      else throw new Error("Unsupported file type. Please upload a PDF or DOCX.");
+
+      const formData = new FormData();
+      formData.append("file", file);
+
+      const res = await fetch(endpoint, { method: "POST", body: formData });
+      if (!res.ok) throw new Error("Upload failed");
+
+      const data = await res.json();
+
+      addSystemMessage(`✅ Loaded: ${data.document_id || data.document || file.name}`);
+      addSystemMessage(`Summary:\n${data.summary}`);
+
+      setUploadStatus("Ready");
+      setQAEnabled(true);
+      return;
+    }
+
+
+    if (url) {
+      const res = await fetch("/upload/url", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ url })
+      });
+
+      if (!res.ok) throw new Error("URL upload failed");
+
+      const data = await res.json();
+
+      addSystemMessage(`✅ Loaded URL: ${data.document || url}`);
+      addSystemMessage(`Summary:\n${data.summary}`);
+
+      setUploadStatus("Ready");
+      setQAEnabled(true);
+      return;
+    }
+
+  } catch (err) {
+    setUploadStatus("Failed");
+    addSystemMessage("❌ Upload failed. Try again.");
+  } finally {
+    uploadBtn.disabled = false;
+  }
+}
+
+async function askQuestion() {
+  const questionInput = document.getElementById("questionInput");
+  const question = questionInput.value.trim();
+  if (!question) return;
+
+  questionInput.value = "";
+
+  addBubble("user", question);
+
+  const thinkingBubble = addBubble("assistant", "Thinking…");
+
+  try {
+    const res = await fetch("/ask", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        question: question,
+        history: chatHistory
+      })
+    });
+
+    if (!res.ok) throw new Error("Question failed");
+
+    const data = await res.json();
+
+    
+    const formattedSources = (data.sources || []).map(s => {
+      const src = s.source || "Unknown source";
+      const page = s.page_number;
+
+      if (page && page > 0) {
+        return `${src} • Page ${page}`;
+      }
+      return src;
+    });
+
+    const uniqueSources = [...new Set(formattedSources)];
+    const bestSource = uniqueSources.length ? uniqueSources[0] : "None";
+
+    thinkingBubble.innerText = `${data.answer}\n\nSource: ${bestSource}`;
+
+    
+    chatHistory.push({ role: "user", content: question });
+    chatHistory.push({ role: "assistant", content: data.answer });
+
+  } catch (err) {
+    thinkingBubble.innerText = "Something went wrong. Try again.";
+  }
+}
+</script>
+
+</body>
+</html>
