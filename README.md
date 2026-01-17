@@ -320,6 +320,7 @@ Request body includes:
     {"role": "assistant", "content": "..."}
   ]
 }
+
 Response includes:
 
 answer
