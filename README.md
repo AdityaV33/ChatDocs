@@ -320,8 +320,8 @@ Request body includes:
     {"role": "assistant", "content": "..."}
   ]
 }
-
-adResponse includes:
+```
+Response includes:
 
 answer
 
