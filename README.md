@@ -4,6 +4,20 @@ ChatDocs is a lightweight RAG (Retrieval-Augmented Generation) application that 
 The system uses OpenAI embeddings + FAISS vector search to retrieve the most relevant parts of the document and generate accurate answers using an LLM.
 
 ---
+## Screenshots
+
+### Home UI
+![Home UI](screenshots/1.png)
+
+### Summary of URL
+![Summary](screenshots/2.png)
+
+### Chats
+![Chat](screenshots/3.png)
+
+
+![Chat](screenshots/4.png)
+
 
 ## Features
 
