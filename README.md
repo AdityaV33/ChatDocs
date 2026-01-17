@@ -321,76 +321,71 @@ Request body includes:
   ]
 }
 ```
-Response includes:
+### Response includes:
 
-answer
+- answer  
+- sources  
+- used_context  
 
-sources
+---
 
-used_context
+## Running Locally
 
-Running Locally
-
-Create virtual environment  
+### Create virtual environment  
 python -m venv venv  
 
-Activate environment  
+### Activate environment  
 Windows PowerShell:  
 venv\Scripts\Activate.ps1  
 
-Install dependencies  
+### Install dependencies  
 pip install -r requirements.txt  
 
-Add environment variables  
+### Add environment variables  
 Create a .env file in the root:  
 OPENAI_API_KEY=your_api_key_here  
 
-Run the app  
+### Run the app  
 uvicorn app.main:app --reload  
 
 App runs at:  
 http://127.0.0.1:8000  
 
-Important Notes  
+---
 
-API Key Security  
+## Important Notes  
+
+### API Key Security  
 
 .env is ignored using .gitignore, so it will not be uploaded to GitHub.  
 The .gitignore file includes:  
 
-.env  
+- .env  
+- .env.*  
+- venv/  
+- pycache/  
+- *.pyc  
 
-.env.*  
+---
 
-venv/  
+### Limitations (Current Version)  
 
-pycache/  
+- DOCX does not support true page numbers (stored as page 0)  
+- Vector store is in-memory (data resets when server restarts)  
+- Only embeds first 25 chunks for cost control  
 
-*.pyc  
+---
 
-Limitations (Current Version)  
-
-DOCX does not support true page numbers (stored as page 0)  
-
-Vector store is in-memory (data resets when server restarts)  
-
-Only embeds first 25 chunks for cost control  
-
-Future Improvements  
+## Future Improvements  
 
 Potential upgrades for production-readiness:  
 
-Persistent vector store (save FAISS index to disk)  
+- Persistent vector store (save FAISS index to disk)  
+- Multi-document support with document switching  
+- Better chunking strategy (semantic chunking)  
+- Add citations with exact chunk text preview  
+- Improve summarization using the whole document progressively  
+- Add authentication and user sessions  
+- Deploy on Render / Railway / AWS make it look good on github readme.md donot change the text
 
-Multi-document support with document switching  
-
-Better chunking strategy (semantic chunking)  
-
-Add citations with exact chunk text preview  
-
-Improve summarization using the whole document progressively  
-
-Add authentication and user sessions  
-
-Deploy on Render / Railway / AWS make it look good on github readme.md donot change the text
 
