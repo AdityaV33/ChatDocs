@@ -7,16 +7,16 @@ The system uses OpenAI embeddings + FAISS vector search to retrieve the most rel
 ## Screenshots
 
 ### Home UI
-![Home UI](screenshots/1.png)
+![Home UI](Screenshots/1.png)
 
 ### Summary of URL
-![Summary](screenshots/2.png)
+![Summary](Screenshots/2.png)
 
 ### Chats
-![Chat](screenshots/3.png)
+![Chat](Screenshots/3.png)
 
 
-![Chat](screenshots/4.png)
+![Chat](Screenshots/4.png)
 
 
 ## Features
