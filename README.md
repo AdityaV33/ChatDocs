@@ -321,7 +321,7 @@ Request body includes:
   ]
 }
 
-Response includes:
+adResponse includes:
 
 answer
 
@@ -352,7 +352,8 @@ App runs at:
 http://127.0.0.1:8000  
 
 Important Notes  
-1. API Key Security  
+
+API Key Security  
 
 .env is ignored using .gitignore, so it will not be uploaded to GitHub.  
 The .gitignore file includes:  
@@ -367,7 +368,7 @@ pycache/
 
 *.pyc  
 
-2. Limitations (Current Version)  
+Limitations (Current Version)  
 
 DOCX does not support true page numbers (stored as page 0)  
 
@@ -392,3 +393,4 @@ Improve summarization using the whole document progressively
 Add authentication and user sessions  
 
 Deploy on Render / Railway / AWS make it look good on github readme.md donot change the text
+
