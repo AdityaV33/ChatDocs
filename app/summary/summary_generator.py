@@ -1,17 +1,19 @@
-from openai import OpenAI
 from typing import List, Dict
+from app.config import GENERATION_PROVIDER, OPENAI_MODEL, GROQ_MODEL
 
-client = OpenAI()
-
-SUMMARY_MODEL = "gpt-3.5-turbo"
-
+if GENERATION_PROVIDER == "openai":
+    from openai import OpenAI
+    client = OpenAI()
+    active_model = OPENAI_MODEL
+elif GENERATION_PROVIDER == "groq":
+    from groq import Groq
+    client = Groq()
+    active_model = GROQ_MODEL
 
 def generate_summary(chunks: List[Dict]) -> str:
     """
     Generate a concise summary from document chunks.
     """
-
-    
     summary_context = "\n\n".join(
         chunk["chunk_text"] for chunk in chunks[:5]
     )
@@ -29,7 +31,7 @@ Give a concise summary (5–7 sentences):
 """
 
     response = client.chat.completions.create(
-        model=SUMMARY_MODEL,
+        model=active_model,
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt}
@@ -37,5 +39,4 @@ Give a concise summary (5–7 sentences):
         temperature=0.3,
         max_tokens=200
     )
-
     return response.choices[0].message.content

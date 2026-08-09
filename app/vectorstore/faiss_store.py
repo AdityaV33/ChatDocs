@@ -27,7 +27,7 @@ class FaissVectorStore:
 
         results = []
         for idx in indices[0]:
-            if idx < len(self.metadata):
+            if 0 <= idx < len(self.metadata):
                 results.append(self.metadata[idx])
 
         return results

@@ -1,20 +1,26 @@
-from openai import OpenAI
 from typing import List, Dict
+from app.config import GENERATION_PROVIDER, OPENAI_MODEL, GROQ_MODEL, EMBEDDING_MODEL
 
-client = OpenAI()
+# Embeddings always strictly use OpenAI
+from openai import OpenAI
+embed_client = OpenAI()
 
-QUESTION_EMBED_MODEL = "text-embedding-3-small"
-ANSWER_MODEL = "gpt-3.5-turbo"
+if GENERATION_PROVIDER == "openai":
+    gen_client = embed_client
+    active_model = OPENAI_MODEL
+elif GENERATION_PROVIDER == "groq":
+    from groq import Groq
+    gen_client = Groq()
+    active_model = GROQ_MODEL
+
 TOP_K = 5
 
-
 def embed_question(question: str) -> list:
-    response = client.embeddings.create(
-        model=QUESTION_EMBED_MODEL,
+    response = embed_client.embeddings.create(
+        model=EMBEDDING_MODEL,
         input=question
     )
     return response.data[0].embedding
-
 
 def retrieve_relevant_chunks(
     question_embedding: list,
@@ -24,7 +30,6 @@ def retrieve_relevant_chunks(
         query_embedding=question_embedding,
         top_k=TOP_K
     )
-
 
 def generate_answer(
     question: str,
@@ -56,7 +61,6 @@ RULES (must follow):
 7) If the document contains something related to the question just asked you must answer accordingly.
 """.strip()
 
-   
     recent_history = history[-6:]
 
     history_block = "\n".join(
@@ -78,17 +82,18 @@ Question:
 Answer:
 """.strip()
 
-    response = client.chat.completions.create(
-        model=ANSWER_MODEL,
+    response = gen_client.chat.completions.create(
+        model=active_model,
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt}
         ],
         temperature=0.3
     )
+    answer_text = response.choices[0].message.content
 
     return {
-        "answer": response.choices[0].message.content,
+        "answer": answer_text,
         "sources": [
             {
                 "page_number": chunk["page_number"],
@@ -99,3 +104,4 @@ Answer:
         ],
         "used_context": [chunk["chunk_text"] for chunk in retrieved_chunks]
     }
+

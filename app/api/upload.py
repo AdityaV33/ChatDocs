@@ -11,7 +11,7 @@ from app.summary.summary_generator import generate_summary
 router = APIRouter()
 
 
-VECTOR_DIM = 1536
+from app.config import VECTOR_DIM
 
 
 vector_store = FaissVectorStore(embedding_dim=VECTOR_DIM)
