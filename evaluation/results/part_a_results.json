@@ -1,0 +1,4128 @@
+{
+  "metadata": {
+    "num_queries": 100,
+    "num_documents": 2668,
+    "embedding_dim": 1536
+  },
+  "aggregate_results": {
+    "faiss": {
+      "precision_at_5": 0.09999999999999998,
+      "recall_at_5": 0.5,
+      "f1_at_5": 0.16666666666666669,
+      "mrr": 0.30083333333333334,
+      "hit_at_5": 0.5,
+      "mean_latency_ms": 0.9892830001263064
+    },
+    "cosine": {
+      "precision_at_5": 0.09799999999999999,
+      "recall_at_5": 0.49,
+      "f1_at_5": 0.16333333333333336,
+      "mrr": 0.29883333333333334,
+      "hit_at_5": 0.49,
+      "mean_latency_ms": 6.709171999937098
+    },
+    "ranking_agreement_percentage": 98.0
+  },
+  "per_query_results": [
+    {
+      "query_id": "q001",
+      "ground_truth": [
+        "doc_003_100"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_003_170",
+          "doc_003_100",
+          "doc_003_164",
+          "doc_003_160",
+          "doc_003_163"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.5,
+          "latency_ms": 0.7815999997546896
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_003_170",
+          "doc_003_100",
+          "doc_003_164",
+          "doc_003_160",
+          "doc_003_163"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.5,
+          "latency_ms": 7.1576000009372365
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q014",
+      "ground_truth": [
+        "doc_003_27"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_002_27",
+          "doc_006_5",
+          "doc_006_8",
+          "doc_006_58",
+          "doc_006_38"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.951600002736086
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_002_27",
+          "doc_006_5",
+          "doc_006_8",
+          "doc_006_58",
+          "doc_006_38"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.4452999977220315
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q015",
+      "ground_truth": [
+        "doc_006_56"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_006_52",
+          "doc_006_33",
+          "doc_006_56",
+          "doc_014_116",
+          "doc_006_45"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.3333333333333333,
+          "latency_ms": 0.9405999990121927
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_006_52",
+          "doc_006_33",
+          "doc_006_56",
+          "doc_014_116",
+          "doc_006_45"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.3333333333333333,
+          "latency_ms": 6.129999997938285
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q035",
+      "ground_truth": [
+        "doc_006_42"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_006_51",
+          "doc_009_5",
+          "doc_008_10",
+          "doc_006_50",
+          "doc_006_54"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 1.114499998948304
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_006_51",
+          "doc_009_5",
+          "doc_008_10",
+          "doc_006_50",
+          "doc_006_54"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.8156999986968
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q003",
+      "ground_truth": [
+        "doc_009_30"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_006_60",
+          "doc_008_10",
+          "doc_009_6",
+          "doc_009_4",
+          "doc_004_59"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.9707999997772276
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_006_60",
+          "doc_008_10",
+          "doc_009_6",
+          "doc_009_4",
+          "doc_004_59"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.777799997507827
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q083",
+      "ground_truth": [
+        "doc_009_9"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_002_128",
+          "doc_008_10",
+          "doc_002_129",
+          "doc_014_96",
+          "doc_014_105"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.8858000001055188
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_002_128",
+          "doc_008_10",
+          "doc_002_129",
+          "doc_014_96",
+          "doc_014_105"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.5230000000156
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q064",
+      "ground_truth": [
+        "doc_003_57"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_003_57",
+          "doc_003_105",
+          "doc_011_32",
+          "doc_023_10",
+          "doc_003_42"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 0.8357000006071758
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_003_57",
+          "doc_003_105",
+          "doc_011_32",
+          "doc_023_10",
+          "doc_003_42"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 7.423999999446096
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q040",
+      "ground_truth": [
+        "doc_003_40"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_003_164",
+          "doc_003_113",
+          "doc_003_112",
+          "doc_003_172",
+          "doc_003_111"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.9084000012080651
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_003_164",
+          "doc_003_113",
+          "doc_003_112",
+          "doc_003_172",
+          "doc_003_111"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.694100000459002
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q118",
+      "ground_truth": [
+        "doc_003_16"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_009_1",
+          "doc_014_43",
+          "doc_005_61",
+          "doc_006_60",
+          "doc_009_6"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.9032000016304664
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_009_1",
+          "doc_014_43",
+          "doc_005_61",
+          "doc_006_60",
+          "doc_009_6"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 8.375199999136385
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q115",
+      "ground_truth": [
+        "doc_003_210"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_003_208",
+          "doc_014_46",
+          "doc_003_170",
+          "doc_003_9",
+          "doc_003_38"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 1.036100002238527
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_003_208",
+          "doc_014_46",
+          "doc_003_170",
+          "doc_003_9",
+          "doc_003_38"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 7.329100000788458
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q113",
+      "ground_truth": [
+        "doc_014_43"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_009_6",
+          "doc_009_5",
+          "doc_014_43",
+          "doc_008_10",
+          "doc_009_3"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.3333333333333333,
+          "latency_ms": 0.897999998414889
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_009_6",
+          "doc_009_5",
+          "doc_014_43",
+          "doc_008_10",
+          "doc_009_3"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.3333333333333333,
+          "latency_ms": 7.656900001165923
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q135",
+      "ground_truth": [
+        "doc_003_113"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_003_113",
+          "doc_003_164",
+          "doc_003_163",
+          "doc_003_115",
+          "doc_003_111"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 0.9803000029933173
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_003_113",
+          "doc_003_164",
+          "doc_003_163",
+          "doc_003_115",
+          "doc_003_111"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 7.660400002350798
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q120",
+      "ground_truth": [
+        "doc_003_93"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_003_93",
+          "doc_003_170",
+          "doc_003_164",
+          "doc_003_201",
+          "doc_003_100"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 3.1462999977520667
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_003_93",
+          "doc_003_170",
+          "doc_003_164",
+          "doc_003_201",
+          "doc_003_100"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 6.689599998935591
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q148",
+      "ground_truth": [
+        "doc_003_79"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_003_78",
+          "doc_003_160",
+          "doc_003_134",
+          "doc_003_164",
+          "doc_003_201"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.9300000019720756
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_003_78",
+          "doc_003_160",
+          "doc_003_134",
+          "doc_003_164",
+          "doc_003_201"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 7.075400000758236
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q162",
+      "ground_truth": [
+        "doc_003_102"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_003_102",
+          "doc_014_23",
+          "doc_003_103",
+          "doc_003_101",
+          "doc_014_47"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 1.3352999994822312
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_003_102",
+          "doc_014_23",
+          "doc_003_103",
+          "doc_003_101",
+          "doc_014_47"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 6.809900001826463
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q006",
+      "ground_truth": [
+        "doc_003_215"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_003_221",
+          "doc_003_204",
+          "doc_003_215",
+          "doc_003_164",
+          "doc_003_116"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.3333333333333333,
+          "latency_ms": 1.1301000013190787
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_003_221",
+          "doc_003_204",
+          "doc_003_215",
+          "doc_003_164",
+          "doc_003_116"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.3333333333333333,
+          "latency_ms": 6.747399998857873
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q103",
+      "ground_truth": [
+        "doc_003_229"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_003_222",
+          "doc_003_199",
+          "doc_003_16",
+          "doc_014_46",
+          "doc_003_210"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 1.2145000000600703
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_003_222",
+          "doc_003_199",
+          "doc_003_16",
+          "doc_014_46",
+          "doc_003_210"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.49409999823547
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q172",
+      "ground_truth": [
+        "doc_003_159"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_004_71",
+          "doc_014_25",
+          "doc_004_4",
+          "doc_008_71",
+          "doc_014_21"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.917900000786176
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_004_71",
+          "doc_014_25",
+          "doc_004_4",
+          "doc_008_71",
+          "doc_014_21"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 7.955500001116889
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q190",
+      "ground_truth": [
+        "doc_003_139"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_004_4",
+          "doc_014_60",
+          "doc_008_71",
+          "doc_014_150",
+          "doc_004_71"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 1.2459999998100102
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_004_4",
+          "doc_014_60",
+          "doc_008_71",
+          "doc_014_150",
+          "doc_004_71"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 7.999400000699097
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q048",
+      "ground_truth": [
+        "doc_003_155"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_003_148",
+          "doc_003_95",
+          "doc_003_97",
+          "doc_003_87",
+          "doc_003_88"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 1.3849000024492852
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_003_148",
+          "doc_003_95",
+          "doc_003_97",
+          "doc_003_87",
+          "doc_003_88"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 7.220599996799137
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q007",
+      "ground_truth": [
+        "doc_003_63"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_003_63",
+          "doc_003_68",
+          "doc_003_74",
+          "doc_003_192",
+          "doc_003_64"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 1.0460000012244564
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_003_63",
+          "doc_003_68",
+          "doc_003_74",
+          "doc_003_192",
+          "doc_003_64"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 6.972299997869413
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q037",
+      "ground_truth": [
+        "doc_003_62"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_003_62",
+          "doc_003_74",
+          "doc_003_61",
+          "doc_002_5",
+          "doc_003_160"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 1.151100001152372
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_003_62",
+          "doc_003_74",
+          "doc_003_61",
+          "doc_002_5",
+          "doc_003_160"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 6.680899998173118
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q032",
+      "ground_truth": [
+        "doc_013_19"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_013_19",
+          "doc_013_35",
+          "doc_014_63",
+          "doc_014_156",
+          "doc_013_8"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 0.9946999998646788
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_013_19",
+          "doc_013_35",
+          "doc_014_63",
+          "doc_014_156",
+          "doc_013_8"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 6.624700003158068
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q052",
+      "ground_truth": [
+        "doc_011_44"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_011_44",
+          "doc_011_135",
+          "doc_011_133",
+          "doc_011_45",
+          "doc_011_42"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 1.5222000001813285
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_011_44",
+          "doc_011_135",
+          "doc_011_133",
+          "doc_011_45",
+          "doc_011_42"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 6.635000001551816
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q108",
+      "ground_truth": [
+        "doc_008_60"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_008_6",
+          "doc_008_7",
+          "doc_008_63",
+          "doc_008_28",
+          "doc_008_60"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.2,
+          "latency_ms": 1.4290999970398843
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_008_6",
+          "doc_008_7",
+          "doc_008_63",
+          "doc_008_28",
+          "doc_008_60"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.2,
+          "latency_ms": 6.499600000097416
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q144",
+      "ground_truth": [
+        "doc_008_62"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_008_7",
+          "doc_003_172",
+          "doc_008_64",
+          "doc_006_23",
+          "doc_008_63"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 1.1310000008961651
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_008_7",
+          "doc_003_172",
+          "doc_008_64",
+          "doc_006_23",
+          "doc_008_63"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.642100001045037
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q193",
+      "ground_truth": [
+        "doc_002_75"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_002_61",
+          "doc_002_14",
+          "doc_002_69",
+          "doc_002_70",
+          "doc_002_65"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.9074000008695293
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_002_61",
+          "doc_002_14",
+          "doc_002_69",
+          "doc_002_70",
+          "doc_002_65"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 8.209800002077827
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q086",
+      "ground_truth": [
+        "doc_006_60"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_006_1",
+          "doc_006_6",
+          "doc_006_36",
+          "doc_006_60",
+          "doc_009_6"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.25,
+          "latency_ms": 1.704400001472095
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_006_1",
+          "doc_006_6",
+          "doc_006_36",
+          "doc_006_60",
+          "doc_009_6"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.25,
+          "latency_ms": 7.252600000356324
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q181",
+      "ground_truth": [
+        "doc_006_28"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_006_49",
+          "doc_006_8",
+          "doc_006_2",
+          "doc_003_167",
+          "doc_006_15"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 1.1616000010690186
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_006_49",
+          "doc_006_8",
+          "doc_006_2",
+          "doc_003_167",
+          "doc_006_15"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.638399998337263
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q114",
+      "ground_truth": [
+        "doc_006_59"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_006_59",
+          "doc_014_96",
+          "doc_006_33",
+          "doc_014_119",
+          "doc_014_125"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 1.4527999992424157
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_006_59",
+          "doc_014_96",
+          "doc_006_33",
+          "doc_014_119",
+          "doc_014_125"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 7.085699999151984
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q028",
+      "ground_truth": [
+        "doc_010_6"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_010_6",
+          "doc_014_47",
+          "doc_010_8",
+          "doc_014_48",
+          "doc_010_3"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 1.1032000002160203
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_010_6",
+          "doc_014_47",
+          "doc_010_8",
+          "doc_014_48",
+          "doc_010_3"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 6.750000000465661
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q033",
+      "ground_truth": [
+        "doc_010_5"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_010_8",
+          "doc_010_3",
+          "doc_014_48",
+          "doc_010_6",
+          "doc_004_4"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 1.0197000010521151
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_010_8",
+          "doc_010_3",
+          "doc_014_48",
+          "doc_010_6",
+          "doc_004_4"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.459399999585003
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q163",
+      "ground_truth": [
+        "doc_014_47"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_014_47",
+          "doc_014_48",
+          "doc_003_102",
+          "doc_010_6",
+          "doc_010_8"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 0.7713000013609417
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_014_47",
+          "doc_014_48",
+          "doc_003_102",
+          "doc_010_6",
+          "doc_010_8"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 6.803199998103082
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q088",
+      "ground_truth": [
+        "doc_002_42"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_004_71",
+          "doc_004_4",
+          "doc_011_54",
+          "doc_009_33",
+          "doc_011_79"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.8404000000155065
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_004_71",
+          "doc_004_4",
+          "doc_011_54",
+          "doc_009_33",
+          "doc_011_79"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.603999998333165
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q058",
+      "ground_truth": [
+        "doc_002_97"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_002_167",
+          "doc_004_71",
+          "doc_011_55",
+          "doc_003_110",
+          "doc_011_54"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.7789000010234304
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_002_167",
+          "doc_004_71",
+          "doc_011_55",
+          "doc_003_110",
+          "doc_011_54"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.765199999790639
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q009",
+      "ground_truth": [
+        "doc_002_169"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_014_30",
+          "doc_003_126",
+          "doc_011_55",
+          "doc_008_51",
+          "doc_003_110"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.7693999978073407
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_014_30",
+          "doc_003_126",
+          "doc_011_55",
+          "doc_008_51",
+          "doc_003_110"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.659499998932006
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q074",
+      "ground_truth": [
+        "doc_002_105"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_016_31",
+          "doc_003_39",
+          "doc_002_105",
+          "doc_016_18",
+          "doc_006_33"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.3333333333333333,
+          "latency_ms": 0.735100002202671
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_016_31",
+          "doc_003_39",
+          "doc_002_105",
+          "doc_016_18",
+          "doc_006_33"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.3333333333333333,
+          "latency_ms": 6.685299998935079
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q094",
+      "ground_truth": [
+        "doc_002_84"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_002_81",
+          "doc_002_84",
+          "doc_001_82",
+          "doc_002_79",
+          "doc_014_116"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.5,
+          "latency_ms": 0.7885999984864611
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_002_81",
+          "doc_002_84",
+          "doc_001_82",
+          "doc_002_79",
+          "doc_014_116"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.5,
+          "latency_ms": 6.693800001812633
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q170",
+      "ground_truth": [
+        "doc_002_96"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_014_116",
+          "doc_002_164",
+          "doc_002_167",
+          "doc_014_96",
+          "doc_008_35"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.8609999968030024
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_014_116",
+          "doc_002_164",
+          "doc_002_167",
+          "doc_014_96",
+          "doc_008_35"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.906999999046093
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q126",
+      "ground_truth": [
+        "doc_002_73"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_009_4",
+          "doc_002_72",
+          "doc_006_33",
+          "doc_006_59",
+          "doc_014_136"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.750399998651119
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_009_4",
+          "doc_002_72",
+          "doc_006_33",
+          "doc_006_59",
+          "doc_014_136"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.238300000404706
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q004",
+      "ground_truth": [
+        "doc_007_95"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_007_100",
+          "doc_003_170",
+          "doc_003_134",
+          "doc_007_96",
+          "doc_003_93"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.9883000020636246
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_007_100",
+          "doc_003_170",
+          "doc_003_134",
+          "doc_007_96",
+          "doc_003_93"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.27850000091712
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q105",
+      "ground_truth": [
+        "doc_007_102"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_007_102",
+          "doc_007_55",
+          "doc_007_63",
+          "doc_007_62",
+          "doc_007_64"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 1.1314000003039837
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_007_102",
+          "doc_007_55",
+          "doc_007_63",
+          "doc_007_62",
+          "doc_007_64"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 6.741199998941738
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q166",
+      "ground_truth": [
+        "doc_002_50"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_003_83",
+          "doc_002_62",
+          "doc_003_88",
+          "doc_002_50",
+          "doc_003_80"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.25,
+          "latency_ms": 1.0970000002998859
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_003_83",
+          "doc_002_62",
+          "doc_003_88",
+          "doc_002_50",
+          "doc_003_80"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.25,
+          "latency_ms": 6.600699998671189
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q167",
+      "ground_truth": [
+        "doc_007_78"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_004_34",
+          "doc_007_78",
+          "doc_007_71",
+          "doc_004_25",
+          "doc_004_24"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.5,
+          "latency_ms": 0.8718999997654464
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_004_34",
+          "doc_007_78",
+          "doc_007_71",
+          "doc_004_25",
+          "doc_004_24"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.5,
+          "latency_ms": 6.826500000897795
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q141",
+      "ground_truth": [
+        "doc_004_54"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_004_54",
+          "doc_002_54",
+          "doc_004_55",
+          "doc_004_53",
+          "doc_004_35"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 0.8311999990837649
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_004_54",
+          "doc_002_54",
+          "doc_004_55",
+          "doc_004_53",
+          "doc_004_35"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 6.628600000112783
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q165",
+      "ground_truth": [
+        "doc_007_72"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_007_71",
+          "doc_007_72",
+          "doc_007_78",
+          "doc_007_73",
+          "doc_007_40"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.5,
+          "latency_ms": 0.9241000007023104
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_007_71",
+          "doc_007_72",
+          "doc_007_78",
+          "doc_007_73",
+          "doc_007_40"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.5,
+          "latency_ms": 6.627999999182066
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q039",
+      "ground_truth": [
+        "doc_014_117"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_007_5",
+          "doc_007_28",
+          "doc_003_19",
+          "doc_002_158",
+          "doc_012_3"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.7876000017859042
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_007_5",
+          "doc_007_28",
+          "doc_003_19",
+          "doc_002_158",
+          "doc_012_3"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.561300000612391
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q050",
+      "ground_truth": [
+        "doc_002_135"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_002_136",
+          "doc_002_137",
+          "doc_002_135",
+          "doc_002_38",
+          "doc_002_157"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.3333333333333333,
+          "latency_ms": 0.8528000034857541
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_002_136",
+          "doc_002_137",
+          "doc_002_135",
+          "doc_002_38",
+          "doc_002_157"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.3333333333333333,
+          "latency_ms": 6.897499999467982
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q121",
+      "ground_truth": [
+        "doc_004_33"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_002_51",
+          "doc_004_24",
+          "doc_004_71",
+          "doc_004_32",
+          "doc_004_74"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.8326999995915685
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_002_51",
+          "doc_004_24",
+          "doc_004_71",
+          "doc_004_32",
+          "doc_004_74"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 7.11060000321595
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q030",
+      "ground_truth": [
+        "doc_004_60"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_004_56",
+          "doc_004_43",
+          "doc_004_61",
+          "doc_004_60",
+          "doc_004_62"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.25,
+          "latency_ms": 0.8808999991742894
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_004_56",
+          "doc_004_43",
+          "doc_004_61",
+          "doc_004_60",
+          "doc_004_62"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.25,
+          "latency_ms": 7.815299999492709
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q034",
+      "ground_truth": [
+        "doc_004_43"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_004_4",
+          "doc_004_56",
+          "doc_004_62",
+          "doc_004_43",
+          "doc_004_64"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.25,
+          "latency_ms": 1.0555999979260378
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_004_4",
+          "doc_004_56",
+          "doc_004_62",
+          "doc_004_43",
+          "doc_004_64"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.25,
+          "latency_ms": 6.431000001612119
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q123",
+      "ground_truth": [
+        "doc_004_62"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_004_62",
+          "doc_004_4",
+          "doc_004_55",
+          "doc_004_56",
+          "doc_004_47"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 0.8610000004409812
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_004_62",
+          "doc_004_4",
+          "doc_004_55",
+          "doc_004_56",
+          "doc_004_47"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 6.973799998377217
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q057",
+      "ground_truth": [
+        "doc_005_116"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_004_43",
+          "doc_004_56",
+          "doc_005_117",
+          "doc_004_60",
+          "doc_004_62"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.7819000020390376
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_004_43",
+          "doc_004_56",
+          "doc_005_117",
+          "doc_004_60",
+          "doc_004_62"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.372400002874201
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q055",
+      "ground_truth": [
+        "doc_014_42"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_011_79",
+          "doc_014_44",
+          "doc_014_42",
+          "doc_014_43",
+          "doc_012_54"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.3333333333333333,
+          "latency_ms": 1.050899998517707
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_011_79",
+          "doc_014_44",
+          "doc_014_42",
+          "doc_014_43",
+          "doc_012_54"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.3333333333333333,
+          "latency_ms": 6.6486000032455195
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q119",
+      "ground_truth": [
+        "doc_002_5"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_013_11",
+          "doc_013_63",
+          "doc_013_12",
+          "doc_002_5",
+          "doc_009_5"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.25,
+          "latency_ms": 1.1464000017440412
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_013_11",
+          "doc_013_63",
+          "doc_013_12",
+          "doc_002_5",
+          "doc_009_5"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.25,
+          "latency_ms": 7.022099998721387
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q021",
+      "ground_truth": [
+        "doc_005_143"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_011_72",
+          "doc_005_143",
+          "doc_003_19",
+          "doc_005_144",
+          "doc_023_118"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.5,
+          "latency_ms": 1.794699997844873
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_011_72",
+          "doc_005_143",
+          "doc_003_19",
+          "doc_005_144",
+          "doc_023_118"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.5,
+          "latency_ms": 8.779800002230331
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q183",
+      "ground_truth": [
+        "doc_005_152"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_005_147",
+          "doc_005_150",
+          "doc_011_82",
+          "doc_011_77",
+          "doc_005_152"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.2,
+          "latency_ms": 0.861699998495169
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_005_147",
+          "doc_005_150",
+          "doc_011_82",
+          "doc_011_77",
+          "doc_005_152"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.2,
+          "latency_ms": 8.45839999965392
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q002",
+      "ground_truth": [
+        "doc_001_68"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_003_179",
+          "doc_009_31",
+          "doc_010_21",
+          "doc_001_109",
+          "doc_009_34"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 1.4955999977246393
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_003_179",
+          "doc_009_31",
+          "doc_010_21",
+          "doc_001_109",
+          "doc_009_34"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.856399999378482
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q013",
+      "ground_truth": [
+        "doc_001_88"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_001_89",
+          "doc_001_11",
+          "doc_001_87",
+          "doc_001_88",
+          "doc_001_91"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.25,
+          "latency_ms": 0.7451999990735203
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_001_89",
+          "doc_001_11",
+          "doc_001_87",
+          "doc_001_88",
+          "doc_001_91"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.25,
+          "latency_ms": 6.7882000003010035
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q019",
+      "ground_truth": [
+        "doc_001_74"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_001_74",
+          "doc_001_30",
+          "doc_001_31",
+          "doc_001_28",
+          "doc_003_123"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 0.7609999993292149
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_001_74",
+          "doc_001_30",
+          "doc_001_31",
+          "doc_001_28",
+          "doc_003_123"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 6.492100001196377
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q059",
+      "ground_truth": [
+        "doc_001_153"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_001_79",
+          "doc_001_126",
+          "doc_001_83",
+          "doc_001_84",
+          "doc_001_153"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.2,
+          "latency_ms": 0.729800001863623
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_001_79",
+          "doc_001_126",
+          "doc_001_83",
+          "doc_001_84",
+          "doc_001_153"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.2,
+          "latency_ms": 6.672699997579912
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q134",
+      "ground_truth": [
+        "doc_001_13"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_002_164",
+          "doc_002_86",
+          "doc_001_44",
+          "doc_001_78",
+          "doc_001_13"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.2,
+          "latency_ms": 0.7786999995005317
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_002_164",
+          "doc_002_86",
+          "doc_001_44",
+          "doc_001_78",
+          "doc_001_13"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.2,
+          "latency_ms": 6.271099999139551
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q195",
+      "ground_truth": [
+        "doc_001_52"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_003_128",
+          "doc_001_8",
+          "doc_003_125",
+          "doc_001_87",
+          "doc_001_17"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 1.3895000010961667
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_003_128",
+          "doc_001_8",
+          "doc_003_125",
+          "doc_001_87",
+          "doc_001_17"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.41639999957988
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q090",
+      "ground_truth": [
+        "doc_001_97"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_014_143",
+          "doc_001_93",
+          "doc_001_94",
+          "doc_001_101",
+          "doc_014_144"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.7666999990760814
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_014_143",
+          "doc_001_93",
+          "doc_001_94",
+          "doc_001_101",
+          "doc_014_144"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.4681000003474765
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q025",
+      "ground_truth": [
+        "doc_006_63"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_014_25",
+          "doc_014_142",
+          "doc_014_21",
+          "doc_014_145",
+          "doc_008_71"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.73319999864907
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_014_142",
+          "doc_014_25",
+          "doc_014_21",
+          "doc_014_145",
+          "doc_008_71"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.257500001083827
+        }
+      },
+      "ranking_agreement": false
+    },
+    {
+      "query_id": "q041",
+      "ground_truth": [
+        "doc_014_31"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_014_30",
+          "doc_014_32",
+          "doc_014_140",
+          "doc_014_31",
+          "doc_014_141"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.25,
+          "latency_ms": 0.8486000006087124
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_014_30",
+          "doc_014_32",
+          "doc_014_140",
+          "doc_014_31",
+          "doc_014_141"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.25,
+          "latency_ms": 6.294799997704104
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q070",
+      "ground_truth": [
+        "doc_014_16"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_014_46",
+          "doc_003_101",
+          "doc_014_22",
+          "doc_014_15",
+          "doc_003_172"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.8116999997582752
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_014_46",
+          "doc_003_101",
+          "doc_014_22",
+          "doc_014_15",
+          "doc_003_172"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.623000001127366
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q082",
+      "ground_truth": [
+        "doc_014_115"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_014_114",
+          "doc_014_113",
+          "doc_000_27",
+          "doc_014_115",
+          "doc_014_140"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.25,
+          "latency_ms": 0.8191000015358441
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_014_114",
+          "doc_014_113",
+          "doc_000_27",
+          "doc_014_115",
+          "doc_014_140"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.25,
+          "latency_ms": 6.63669999994454
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q049",
+      "ground_truth": [
+        "doc_014_111"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_014_109",
+          "doc_014_110",
+          "doc_014_114",
+          "doc_014_71",
+          "doc_014_108"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.7155000021157321
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_014_109",
+          "doc_014_110",
+          "doc_014_114",
+          "doc_014_71",
+          "doc_014_108"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.65350000053877
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q128",
+      "ground_truth": [
+        "doc_014_124"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_014_124",
+          "doc_014_123",
+          "doc_014_18",
+          "doc_014_122",
+          "doc_014_120"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 0.8711999980732799
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_014_124",
+          "doc_014_123",
+          "doc_014_18",
+          "doc_014_122",
+          "doc_014_120"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 6.465099999331869
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q150",
+      "ground_truth": [
+        "doc_011_66"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_014_140",
+          "doc_011_66",
+          "doc_007_107",
+          "doc_014_20",
+          "doc_013_63"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.5,
+          "latency_ms": 0.8441000027232803
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_014_140",
+          "doc_011_66",
+          "doc_007_107",
+          "doc_014_20",
+          "doc_013_63"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.5,
+          "latency_ms": 6.36329999906593
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q139",
+      "ground_truth": [
+        "doc_011_46"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_011_49",
+          "doc_011_138",
+          "doc_001_64",
+          "doc_011_11",
+          "doc_011_32"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 1.3102000011713244
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_011_49",
+          "doc_011_138",
+          "doc_001_64",
+          "doc_011_11",
+          "doc_011_32"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.368899998051347
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q097",
+      "ground_truth": [
+        "doc_011_132"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_011_15",
+          "doc_011_16",
+          "doc_011_132",
+          "doc_011_104",
+          "doc_011_49"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.3333333333333333,
+          "latency_ms": 0.728700000763638
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_011_15",
+          "doc_011_16",
+          "doc_011_132",
+          "doc_011_104",
+          "doc_011_49"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.3333333333333333,
+          "latency_ms": 6.316800001513911
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q017",
+      "ground_truth": [
+        "doc_020_55"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_016_73",
+          "doc_015_8",
+          "doc_002_28",
+          "doc_022_63",
+          "doc_002_33"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.8288000026368536
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_016_73",
+          "doc_015_8",
+          "doc_002_28",
+          "doc_022_63",
+          "doc_002_33"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.2613999980385415
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q008",
+      "ground_truth": [
+        "doc_021_105"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_021_105",
+          "doc_021_15",
+          "doc_021_17",
+          "doc_021_77",
+          "doc_021_3"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 0.8401999984926078
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_021_105",
+          "doc_021_15",
+          "doc_021_17",
+          "doc_021_77",
+          "doc_021_3"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 6.2825999993947335
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q023",
+      "ground_truth": [
+        "doc_021_104"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_022_102",
+          "doc_022_2",
+          "doc_022_1",
+          "doc_021_19",
+          "doc_018_101"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.8335999991686549
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_022_102",
+          "doc_022_2",
+          "doc_022_1",
+          "doc_021_19",
+          "doc_018_101"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.876199997350341
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q047",
+      "ground_truth": [
+        "doc_021_68"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_021_34",
+          "doc_021_68",
+          "doc_021_5",
+          "doc_021_105",
+          "doc_022_3"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.5,
+          "latency_ms": 0.9260999977414031
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_021_34",
+          "doc_021_68",
+          "doc_021_5",
+          "doc_021_105",
+          "doc_022_3"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.5,
+          "latency_ms": 6.829999998444691
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q140",
+      "ground_truth": [
+        "doc_018_10"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_022_11",
+          "doc_022_12",
+          "doc_022_1",
+          "doc_022_102",
+          "doc_015_1"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.832600002468098
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_022_11",
+          "doc_022_12",
+          "doc_022_1",
+          "doc_022_102",
+          "doc_015_1"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.601799999771174
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q065",
+      "ground_truth": [
+        "doc_018_87"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_018_79",
+          "doc_018_80",
+          "doc_018_75",
+          "doc_018_83",
+          "doc_018_91"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.7407000011880882
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_018_79",
+          "doc_018_80",
+          "doc_018_75",
+          "doc_018_83",
+          "doc_018_91"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.422999998903833
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q142",
+      "ground_truth": [
+        "doc_018_88"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_018_89",
+          "doc_018_88",
+          "doc_021_72",
+          "doc_021_23",
+          "doc_021_71"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.5,
+          "latency_ms": 0.8763999976508785
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_018_89",
+          "doc_018_88",
+          "doc_021_72",
+          "doc_021_23",
+          "doc_021_71"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.5,
+          "latency_ms": 6.12629999886849
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q189",
+      "ground_truth": [
+        "doc_018_79"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_019_17",
+          "doc_021_101",
+          "doc_019_16",
+          "doc_021_71",
+          "doc_020_69"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 1.0464999977557454
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_019_17",
+          "doc_021_101",
+          "doc_019_16",
+          "doc_021_71",
+          "doc_020_69"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 5.9000000001105946
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q078",
+      "ground_truth": [
+        "doc_021_59"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_021_59",
+          "doc_021_60",
+          "doc_021_62",
+          "doc_021_55",
+          "doc_021_63"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 0.8992000002763234
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_021_59",
+          "doc_021_60",
+          "doc_021_62",
+          "doc_021_55",
+          "doc_021_63"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 6.436399999074638
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q171",
+      "ground_truth": [
+        "doc_021_53"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_021_14",
+          "doc_021_53",
+          "doc_021_98",
+          "doc_021_99",
+          "doc_021_88"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.5,
+          "latency_ms": 0.9127000012085773
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_021_14",
+          "doc_021_53",
+          "doc_021_98",
+          "doc_021_99",
+          "doc_021_88"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.5,
+          "latency_ms": 6.196800000907388
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q182",
+      "ground_truth": [
+        "doc_021_80"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_021_76",
+          "doc_021_61",
+          "doc_021_89",
+          "doc_021_15",
+          "doc_021_14"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.9314000017184298
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_021_76",
+          "doc_021_61",
+          "doc_021_89",
+          "doc_021_15",
+          "doc_021_14"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.150600002001738
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q155",
+      "ground_truth": [
+        "doc_021_81"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_021_81",
+          "doc_021_82",
+          "doc_021_76",
+          "doc_021_80",
+          "doc_021_3"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 0.9386000019731
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_021_81",
+          "doc_021_82",
+          "doc_021_76",
+          "doc_021_80",
+          "doc_021_3"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 6.524500000523403
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q156",
+      "ground_truth": [
+        "doc_021_44"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_021_49",
+          "doc_021_86",
+          "doc_021_12",
+          "doc_021_85",
+          "doc_021_51"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.9309999986726325
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_021_49",
+          "doc_021_86",
+          "doc_021_12",
+          "doc_021_85",
+          "doc_021_51"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.06310000148369
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q178",
+      "ground_truth": [
+        "doc_021_33"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_018_112",
+          "doc_021_101",
+          "doc_018_115",
+          "doc_021_113",
+          "doc_018_114"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.8142999977280851
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_018_112",
+          "doc_021_101",
+          "doc_018_115",
+          "doc_021_113",
+          "doc_018_114"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.196400001499569
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q147",
+      "ground_truth": [
+        "doc_020_65"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_018_115",
+          "doc_018_112",
+          "doc_019_109",
+          "doc_021_101",
+          "doc_021_113"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 1.2162999992142431
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_018_115",
+          "doc_018_112",
+          "doc_019_109",
+          "doc_021_101",
+          "doc_021_113"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.072599997423822
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q187",
+      "ground_truth": [
+        "doc_018_24"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_016_65",
+          "doc_016_60",
+          "doc_022_3",
+          "doc_022_102",
+          "doc_022_103"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.843699999677483
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_016_65",
+          "doc_016_60",
+          "doc_022_3",
+          "doc_022_102",
+          "doc_022_103"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.347100003040396
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q018",
+      "ground_truth": [
+        "doc_023_25"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_023_19",
+          "doc_022_102",
+          "doc_015_1",
+          "doc_023_25",
+          "doc_022_72"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.25,
+          "latency_ms": 0.9017000011226628
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_023_19",
+          "doc_022_102",
+          "doc_015_1",
+          "doc_023_25",
+          "doc_022_72"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.25,
+          "latency_ms": 6.177900002512615
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q125",
+      "ground_truth": [
+        "doc_023_2"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_023_30",
+          "doc_022_3",
+          "doc_016_60",
+          "doc_022_102",
+          "doc_016_12"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.8578999986639246
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_023_30",
+          "doc_022_3",
+          "doc_016_60",
+          "doc_022_102",
+          "doc_016_12"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.761399999959394
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q158",
+      "ground_truth": [
+        "doc_023_13"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_023_31",
+          "doc_023_14",
+          "doc_023_60",
+          "doc_023_10",
+          "doc_023_37"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.8250999999290798
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_023_31",
+          "doc_023_14",
+          "doc_023_60",
+          "doc_023_10",
+          "doc_023_37"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.4435000022058375
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q043",
+      "ground_truth": [
+        "doc_023_32"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_023_90",
+          "doc_023_53",
+          "doc_023_85",
+          "doc_023_56",
+          "doc_023_95"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 1.1962999997194856
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_023_90",
+          "doc_023_53",
+          "doc_023_85",
+          "doc_023_56",
+          "doc_023_95"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.46009999763919
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q054",
+      "ground_truth": [
+        "doc_023_93"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_014_60",
+          "doc_014_136",
+          "doc_009_34",
+          "doc_010_21",
+          "doc_005_95"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.8177999989129603
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_014_60",
+          "doc_014_136",
+          "doc_009_34",
+          "doc_010_21",
+          "doc_005_95"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.206199999724049
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q075",
+      "ground_truth": [
+        "doc_023_55"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_023_59",
+          "doc_023_109",
+          "doc_023_56",
+          "doc_023_65",
+          "doc_023_55"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 0.2,
+          "latency_ms": 0.7688000005146023
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_023_59",
+          "doc_023_109",
+          "doc_023_56",
+          "doc_023_65",
+          "doc_023_90"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.035000002157176
+        }
+      },
+      "ranking_agreement": false
+    },
+    {
+      "query_id": "q152",
+      "ground_truth": [
+        "doc_023_54"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_022_48",
+          "doc_014_65",
+          "doc_014_79",
+          "doc_014_12",
+          "doc_011_82"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 1.2537999973574188
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_022_48",
+          "doc_014_65",
+          "doc_014_79",
+          "doc_014_12",
+          "doc_011_82"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 5.973800001811469
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q136",
+      "ground_truth": [
+        "doc_021_71"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_021_71",
+          "doc_023_86",
+          "doc_022_48",
+          "doc_017_20",
+          "doc_022_72"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 0.8292999991681427
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_021_71",
+          "doc_023_86",
+          "doc_022_48",
+          "doc_017_20",
+          "doc_022_72"
+        ],
+        "metrics": {
+          "hit_at_5": 1,
+          "precision_at_5": 0.2,
+          "recall_at_5": 1.0,
+          "f1_at_5": 0.33333333333333337,
+          "mrr": 1.0,
+          "latency_ms": 6.062799999199342
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q106",
+      "ground_truth": [
+        "doc_022_52"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_021_66",
+          "doc_014_8",
+          "doc_021_74",
+          "doc_022_150",
+          "doc_021_25"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.8740000012039673
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_021_66",
+          "doc_014_8",
+          "doc_021_74",
+          "doc_022_150",
+          "doc_021_25"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.191899999976158
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q111",
+      "ground_truth": [
+        "doc_022_143"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_001_108",
+          "doc_014_92",
+          "doc_002_46",
+          "doc_016_67",
+          "doc_001_41"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.8348999981535599
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_001_108",
+          "doc_014_92",
+          "doc_002_46",
+          "doc_016_67",
+          "doc_001_41"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.188499999552732
+        }
+      },
+      "ranking_agreement": true
+    },
+    {
+      "query_id": "q079",
+      "ground_truth": [
+        "doc_007_94"
+      ],
+      "faiss": {
+        "top_5": [
+          "doc_007_51",
+          "doc_007_52",
+          "doc_007_74",
+          "doc_008_55",
+          "doc_007_98"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 0.8278000022983178
+        }
+      },
+      "cosine": {
+        "top_5": [
+          "doc_007_51",
+          "doc_007_52",
+          "doc_007_74",
+          "doc_008_55",
+          "doc_007_98"
+        ],
+        "metrics": {
+          "hit_at_5": 0,
+          "precision_at_5": 0.0,
+          "recall_at_5": 0.0,
+          "f1_at_5": 0.0,
+          "mrr": 0.0,
+          "latency_ms": 6.620599997404497
+        }
+      },
+      "ranking_agreement": true
+    }
+  ]
+}
