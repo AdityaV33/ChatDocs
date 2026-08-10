@@ -1,0 +1,202 @@
+[
+  {
+    "document_id": "doc_000",
+    "filename": "2411.18583v1.pdf",
+    "source": "https://arxiv.org/pdf/2411.18583v1.pdf",
+    "document_type": "application/pdf",
+    "description": "Automated Literature Review Using NLP Techniques and LLM-Based Retrieval-Augmented Generation",
+    "size_bytes": 664722
+  },
+  {
+    "document_id": "doc_001",
+    "filename": "2502.00306v2.pdf",
+    "source": "https://arxiv.org/pdf/2502.00306v2.pdf",
+    "document_type": "application/pdf",
+    "description": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation",
+    "size_bytes": 1693722
+  },
+  {
+    "document_id": "doc_002",
+    "filename": "2510.22344v1.pdf",
+    "source": "https://arxiv.org/pdf/2510.22344v1.pdf",
+    "document_type": "application/pdf",
+    "description": "FAIR-RAG: Faithful Adaptive Iterative Refinement for Retrieval-Augmented Generation",
+    "size_bytes": 2367153
+  },
+  {
+    "document_id": "doc_003",
+    "filename": "2601.05264v1.pdf",
+    "source": "https://arxiv.org/pdf/2601.05264v1.pdf",
+    "document_type": "application/pdf",
+    "description": "Engineering the RAG Stack: A Comprehensive Review of the Architecture and Trust Frameworks for Retrieval-Augmented Generation Systems",
+    "size_bytes": 2917925
+  },
+  {
+    "document_id": "doc_004",
+    "filename": "2503.16581v1.pdf",
+    "source": "https://arxiv.org/pdf/2503.16581v1.pdf",
+    "document_type": "application/pdf",
+    "description": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models",
+    "size_bytes": 545201
+  },
+  {
+    "document_id": "doc_005",
+    "filename": "2502.01113v3.pdf",
+    "source": "https://arxiv.org/pdf/2502.01113v3.pdf",
+    "document_type": "application/pdf",
+    "description": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+    "size_bytes": 1148983
+  },
+  {
+    "document_id": "doc_006",
+    "filename": "2412.05838v1.pdf",
+    "source": "https://arxiv.org/pdf/2412.05838v1.pdf",
+    "document_type": "application/pdf",
+    "description": "A Collaborative Multi-Agent Approach to Retrieval-Augmented Generation Across Diverse Data",
+    "size_bytes": 1157800
+  },
+  {
+    "document_id": "doc_007",
+    "filename": "2603.09891v1.pdf",
+    "source": "https://arxiv.org/pdf/2603.09891v1.pdf",
+    "document_type": "application/pdf",
+    "description": "Overview of the TREC 2025 Retrieval Augmented Generation (RAG) Track",
+    "size_bytes": 3652650
+  },
+  {
+    "document_id": "doc_008",
+    "filename": "2604.19899v1.pdf",
+    "source": "https://arxiv.org/pdf/2604.19899v1.pdf",
+    "document_type": "application/pdf",
+    "description": "A Reproducibility Study of Metacognitive Retrieval-Augmented Generation",
+    "size_bytes": 770954
+  },
+  {
+    "document_id": "doc_009",
+    "filename": "2411.16133v2.pdf",
+    "source": "https://arxiv.org/pdf/2411.16133v2.pdf",
+    "document_type": "application/pdf",
+    "description": "Context Awareness Gate For Retrieval Augmented Generation",
+    "size_bytes": 223905
+  },
+  {
+    "document_id": "doc_010",
+    "filename": "2607.01852v1.pdf",
+    "source": "https://arxiv.org/pdf/2607.01852v1.pdf",
+    "document_type": "application/pdf",
+    "description": "Evaluating Chunking Strategies for Retrieval-Augmented Generation on Academic Texts",
+    "size_bytes": 692936
+  },
+  {
+    "document_id": "doc_011",
+    "filename": "2411.08891v4.pdf",
+    "source": "https://arxiv.org/pdf/2411.08891v4.pdf",
+    "document_type": "application/pdf",
+    "description": "Reliable Decision Making via Calibration Oriented Retrieval Augmented Generation",
+    "size_bytes": 5611129
+  },
+  {
+    "document_id": "doc_012",
+    "filename": "2412.14457v1.pdf",
+    "source": "https://arxiv.org/pdf/2412.14457v1.pdf",
+    "document_type": "application/pdf",
+    "description": "VISA: Retrieval Augmented Generation with Visual Source Attribution",
+    "size_bytes": 3651221
+  },
+  {
+    "document_id": "doc_013",
+    "filename": "2509.01030v2.pdf",
+    "source": "https://arxiv.org/pdf/2509.01030v2.pdf",
+    "document_type": "application/pdf",
+    "description": "Identifying Origins of Place Names via Retrieval Augmented Generation",
+    "size_bytes": 622038
+  },
+  {
+    "document_id": "doc_014",
+    "filename": "2505.04680v1.pdf",
+    "source": "https://arxiv.org/pdf/2505.04680v1.pdf",
+    "document_type": "application/pdf",
+    "description": "Retrieval Augmented Generation Evaluation for Health Documents",
+    "size_bytes": 2557647
+  },
+  {
+    "document_id": "doc_015",
+    "filename": "2412.18819v2.pdf",
+    "source": "https://arxiv.org/pdf/2412.18819v2.pdf",
+    "document_type": "application/pdf",
+    "description": "LLM-assisted Vector Similarity Search",
+    "size_bytes": 200482
+  },
+  {
+    "document_id": "doc_016",
+    "filename": "2304.01926v1.pdf",
+    "source": "https://arxiv.org/pdf/2304.01926v1.pdf",
+    "document_type": "application/pdf",
+    "description": "High-Throughput Vector Similarity Search in Knowledge Graphs",
+    "size_bytes": 4401570
+  },
+  {
+    "document_id": "doc_017",
+    "filename": "2601.11765v1.pdf",
+    "source": "https://arxiv.org/pdf/2601.11765v1.pdf",
+    "document_type": "application/pdf",
+    "description": "Sum Estimation via Vector Similarity Search",
+    "size_bytes": 760667
+  },
+  {
+    "document_id": "doc_018",
+    "filename": "2508.17828v1.pdf",
+    "source": "https://arxiv.org/pdf/2508.17828v1.pdf",
+    "document_type": "application/pdf",
+    "description": "TRIM: Accelerating High-Dimensional Vector Similarity Search with Enhanced Triangle-Inequality-Based Pruning",
+    "size_bytes": 2083291
+  },
+  {
+    "document_id": "doc_019",
+    "filename": "2502.01528v1.pdf",
+    "source": "https://arxiv.org/pdf/2502.01528v1.pdf",
+    "document_type": "application/pdf",
+    "description": "SQUASH: Serverless and Distributed Quantization-based Attributed Vector Similarity Search",
+    "size_bytes": 1345585
+  },
+  {
+    "document_id": "doc_020",
+    "filename": "2603.26150v1.pdf",
+    "source": "https://arxiv.org/pdf/2603.26150v1.pdf",
+    "document_type": "application/pdf",
+    "description": "Vector Similarity Search-Based MCS Selection in Massive Multi-User MIMO-OFDM",
+    "size_bytes": 1830771
+  },
+  {
+    "document_id": "doc_021",
+    "filename": "2602.23342v4.pdf",
+    "source": "https://arxiv.org/pdf/2602.23342v4.pdf",
+    "document_type": "application/pdf",
+    "description": "AlayaLaser: Efficient Index Layout and Search Strategy for Large-scale High-dimensional Vector Similarity Search",
+    "size_bytes": 1634679
+  },
+  {
+    "document_id": "doc_022",
+    "filename": "2604.02801v1.pdf",
+    "source": "https://arxiv.org/pdf/2604.02801v1.pdf",
+    "document_type": "application/pdf",
+    "description": "Distance Comparison Operations Are Not Silver Bullets in Vector Similarity Search: A Benchmark Study on Their Merits and Limits",
+    "size_bytes": 2742720
+  },
+  {
+    "document_id": "doc_023",
+    "filename": "2512.12980v2.pdf",
+    "source": "https://arxiv.org/pdf/2512.12980v2.pdf",
+    "document_type": "application/pdf",
+    "description": "Reveal Hidden Pitfalls and Navigate Next Generation of Vector Similarity Search from Task-Centric Views",
+    "size_bytes": 3096942
+  },
+  {
+    "document_id": "doc_024",
+    "filename": "2409.07832v1.pdf",
+    "source": "https://arxiv.org/pdf/2409.07832v1.pdf",
+    "document_type": "application/pdf",
+    "description": "Efficient and Reliable Vector Similarity Search Using Asymmetric Encoding with NAND-Flash for Many-Class Few-Shot Learning",
+    "size_bytes": 1842531
+  }
+]
