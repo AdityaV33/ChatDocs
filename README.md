@@ -400,6 +400,6 @@ Potential upgrades for production-readiness:
 - Add citations with exact chunk text preview  
 - Improve summarization using the whole document progressively  
 - Add authentication and user sessions  
-- Deploy on Render / Railway / AWS make it look good on github readme.md donot change the text
+- Deploy on Render / Railway / AWS
 
 
